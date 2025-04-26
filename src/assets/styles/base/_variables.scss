@@ -1,0 +1,29 @@
+@use "sass:color";
+
+//################ FONTS ################
+$font-family-title: "Poppins", sans-serif;
+$font-family-text: "Onest", sans-serif;
+
+//################ COLORS ################
+$color_navy: #1f31a8;
+$color_blue: #4b91f1;
+$color_yellow: #f3c623;
+$color_orange: #eb8317;
+$color_grey: #f4f6ff;
+$color_white: #ffffff;
+$bg_web: color-scale-lightness($color_blue, 95%);
+
+//################ MEDIA QUERIES ################
+
+$mqMinWidth: 420px;
+$mqMinWidth800px: 800px;
+$mqMinWidth992px: 992px;
+$mqMinWidth1200px: 1200px;
+
+// ################ BOX SHADOW ################
+
+$box-shadow: 5px 7px 5px 1px color-scale-alpha($color_navy, -40%);
+
+$theme-colors: (
+  "primary": red,
+);

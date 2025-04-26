@@ -6,8 +6,9 @@
 /**
  * Import variables
  */
-
-@import "variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+@import "base/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
@@ -25,7 +26,8 @@
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
+@import "base/base";
+@import "layouts/poster";
 
 
 /**

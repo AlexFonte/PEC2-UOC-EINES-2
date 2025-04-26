@@ -1,0 +1,44 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+//font global per utilitzar rem
+html {
+  font-size: 10px;
+}
+
+//regla global per a tot el body
+body {
+  // height: 100vh;
+  margin: 0;
+  font-family: $font-family-text;
+  font-size: 1.6rem;
+  line-height: 24px;
+  background-color: $bg-web;
+  color: $color_navy;
+}
+
+//font family per a tots els títols
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-title;
+}
+
+//afegir cursor sobre el logo de la web
+.svg {
+  cursor: pointer;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+}

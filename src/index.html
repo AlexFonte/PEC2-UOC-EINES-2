@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+  <meta name="description" content="Jornadas y charlas sobre la economia circular." />
   <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <link rel="icon" href="assets/images/logo-white.svg" type="image/svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins&family=Onest:wght@100..900&display=swap"
+    as="style" onload="this.rel='stylesheet'">
   <title>UOC Boilerplate</title>
 </head>
 
 <body>
-  <div class="uoc-container">
-    <picture>
-      <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-      <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
+  <div class="poster">
+
+    <picture class="poster__container">
+      <source srcset="assets/images/conferencia.jpg?as=webp" type="image/webp" />
+      <img src="assets/images/conferencia.jpg" alt="Vista panorámica de Viana do Castelo" width="auto" height="auto"
+        class="poster__image" loading="lazy" decoding="async" />
     </picture>
-    <h1 class="uoc-title">Hello, UOC!</h1>
-    <p>
-      This is a starter template for the Advanced HTML and CSS Tools courses
-      from the Master's Program in Multimedia Applications and the Master's
-      Program in Web App and Website Development at the Universitat Oberta de
-      Catalunya.
-    </p>
-    <button class="btn btn-primary">Primary button</button>
+    <main>
+      <h1>PROVA ALEX</h1>
+    </main>
   </div>
   <include src="./views/footer.html"></include>
   <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
