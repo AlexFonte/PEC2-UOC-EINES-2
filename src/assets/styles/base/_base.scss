@@ -16,8 +16,8 @@ body {
   font-family: $font-family-text;
   font-size: 1.6rem;
   line-height: 24px;
-  background-color: $bg-web;
-  color: $color_navy;
+  background-color: $color_veige;
+  color: $color_blue;
 }
 
 //font family per a tots els títols
@@ -41,4 +41,8 @@ h6 {
   padding-right: 1rem;
   padding-left: 1rem;
   width: 100%;
+}
+
+.orange {
+  color: $color_orange;
 }

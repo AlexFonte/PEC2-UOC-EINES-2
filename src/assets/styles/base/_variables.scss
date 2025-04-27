@@ -5,25 +5,29 @@ $font-family-title: "Poppins", sans-serif;
 $font-family-text: "Onest", sans-serif;
 
 //################ COLORS ################
-$color_navy: #1f31a8;
-$color_blue: #4b91f1;
-$color_yellow: #f3c623;
-$color_orange: #eb8317;
-$color_grey: #f4f6ff;
+$color_green: #2e7d32;
+$color_green_light: #a5d6a7;
+$color_veige: #f1f8e9;
 $color_white: #ffffff;
-$bg_web: color-scale-lightness($color_blue, 95%);
+$color_green_dark: #3b6f6e;
+$color_grey: #616161;
+$color_blue: #0277bd;
+$color_violer: #5e35b1;
+$color_orange: #ff7043;
+$bg_web: color-scale-lightness($color_green, 95%);
 
 //################ MEDIA QUERIES ################
 
-$mqMinWidth: 420px;
-$mqMinWidth800px: 800px;
-$mqMinWidth992px: 992px;
-$mqMinWidth1200px: 1200px;
+$mqMinWidth420: 420px;
+$mqMinWidth600: 600px;
+$mqMinWidth800: 800px;
+$mqMinWidth992: 992px;
+$mqMinWidth1200: 1200px;
 
 // ################ BOX SHADOW ################
 
-$box-shadow: 5px 7px 5px 1px color-scale-alpha($color_navy, -40%);
+$box-shadow: 5px 7px 5px 1px color-scale-alpha($color_green_dark, -40%);
 
 $theme-colors: (
-  "primary": red,
+  "primary": $color_orange,
 );
