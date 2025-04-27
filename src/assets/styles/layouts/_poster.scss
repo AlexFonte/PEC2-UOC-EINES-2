@@ -59,7 +59,7 @@
     }
 
     &__logo__img {
-        width: 400px;
+        width: 250px;
 
         @media screen and (min-width: $mqMinWidth768) {
             width: 300px;
@@ -106,7 +106,7 @@ main {
     /* Coloca el contenido por encima de la imagen */
     padding: 2rem;
     /* Añade espacio alrededor del contenido */
-    color: #fff;
+    color: $color_orange;
     /* Cambia el color del texto para que sea visible sobre la imagen */
     text-align: center;
     /* Centra el contenido */
