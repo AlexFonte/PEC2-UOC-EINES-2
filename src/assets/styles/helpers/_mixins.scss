@@ -8,13 +8,14 @@
 }
 
 // Generar un box
-@mixin box($radius: 20px, $bckg-color: $color_white) {
+@mixin box($radius: 20px, $bckg-color: $color_white, $padding: 0) {
     border-radius: $radius;
     background-color: $bckg-color;
+    padding: $padding;
 }
 
-@mixin box-border($border: 3px solid $color_orange, $radius: 20px, $bckg-color: $color_white) {
-    @include box($radius, $bckg-color);
+@mixin box-border($border: 3px solid $color_orange, $radius: 20px, $bckg-color: $color_white, $padding: 0) {
+    @include box($radius, $bckg-color, $padding);
     border: $border;
 }
 

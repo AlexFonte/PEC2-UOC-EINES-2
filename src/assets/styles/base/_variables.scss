@@ -30,5 +30,7 @@ $mqMinWidth1200: 1200px;
 $box-shadow: 5px 7px 5px 1px color-scale-alpha($color_green_dark, -40%);
 
 $theme-colors: (
-  "primary": $color_orange,
+  "primary": $color_green,
+  "alert": $color_orange,
+  "secondary": $color_blue,
 );

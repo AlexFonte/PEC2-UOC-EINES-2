@@ -41,6 +41,7 @@
 
 }
 
+//export to _nav.scss
 .nav {
     @include flex(column, center, center, center);
 
@@ -67,32 +68,46 @@
         }
     }
 
+    // .nav__menu {
+    //     width: 100%;
+
+    //     @media screen and (min-width: $mqMinWidth768) {
+    //         width: auto;
+    //     }
+    // }
+
     &__list {
         @include flex(column, center, center, center);
         gap: 3rem;
         list-style: none;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
         font-size: 2rem;
         font-weight: bold;
-        width: 100%;
+        // width: 50%;
 
         @media screen and (min-width: $mqMinWidth768) {
             flex-direction: row;
             justify-content: space-around;
+            // width: auto;
         }
     }
 
-    // &__item {
-    //     background-color: $color_orange;
-    // }
+    &__item {
+        @include box(5px, $color_orange, 1rem 2rem);
+        // background-color: $color_orange;
+        /*      border-radius: 5px;
+             padding: 1rem 2rem; */
+        width: 100%;
+        text-align: center;
+    }
+
+    &__item:hover {
+        background-color: $color_blue;
+    }
 
     &__item__a {
         text-decoration: none;
-        background-color: $color_orange;
-        padding: 1rem 2rem;
-        border-radius: 5px;
-        width: 100%;
         text-align: center;
     }
 
@@ -104,10 +119,72 @@ main {
     /* Asegura que el contenido esté sobre el fondo */
     z-index: 1;
     /* Coloca el contenido por encima de la imagen */
-    padding: 2rem;
+    padding: 1rem 2rem;
     /* Añade espacio alrededor del contenido */
     color: $color_orange;
     /* Cambia el color del texto para que sea visible sobre la imagen */
     text-align: center;
     /* Centra el contenido */
+    @include flex(column, center, center, center);
+
+    width: 90%;
+    margin: 0 auto;
+    gap: 1rem
 }
+
+// @supports not (display: grid) {
+.title {
+    width: auto;
+}
+
+.resume {
+    @include box-border(3px solid $color_blue, 5px, $color_white, 1rem 2rem);
+    color: $color_blue;
+    width: 100%;
+
+    @media screen and (min-width: $mqMinWidth800) {
+        width: 80%;
+    }
+
+    @media screen and (min-width: $mqMinWidth992) {
+        width: 60%;
+    }
+}
+
+
+//passar a container
+.group-list {
+    width: 60%;
+
+    @media screen and (min-width: $mqMinWidth800) {
+        width: 40%;
+    }
+
+    @media screen and (min-width: $mqMinWidth992) {
+        width: 25%;
+    }
+}
+
+.div-more {
+    width: 100%;
+
+    & .btn {
+        font-size: 2rem;
+        width: 100%;
+        font-weight: bold;
+
+        @media screen and (min-width: $mqMinWidth800) {
+            width: 80%;
+        }
+
+        @media screen and (min-width: $mqMinWidth992) {
+            width: 60%;
+        }
+    }
+}
+
+// .cutom-box-h1 {}
+
+// }
+
+// @supports (display: grid) {}
