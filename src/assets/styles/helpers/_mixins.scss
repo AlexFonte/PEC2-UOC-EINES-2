@@ -27,7 +27,7 @@
 
 @mixin grid-template-row($template: repeat(1, auto), $gap: 1rem) {
     display: grid;
-    grid-template-columns: $template;
+    grid-template-rows: $template;
     row-gap: 1rem;
 }
 
