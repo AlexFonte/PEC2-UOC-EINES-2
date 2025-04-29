@@ -23,6 +23,7 @@ $mqMinWidth600: 600px;
 $mqMinWidth768: 768px;
 $mqMinWidth800: 800px;
 $mqMinWidth992: 992px;
+$mqMinWidth1000: 1000px;
 $mqMinWidth1200: 1200px;
 
 // ################ BOX SHADOW ################
@@ -33,4 +34,5 @@ $theme-colors: (
   "primary": $color_green,
   "alert": $color_orange,
   "secondary": $color_blue,
+  // "body-font-weight": bold,
 );
