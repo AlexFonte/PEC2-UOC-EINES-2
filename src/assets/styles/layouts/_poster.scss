@@ -113,7 +113,7 @@
 
 }
 
-main {
+.poster__content {
     /* Ocupa todo el espacio disponible */
     position: relative;
     /* Asegura que el contenido esté sobre el fondo */
@@ -129,15 +129,47 @@ main {
 
     width: 90%;
     margin: 0 auto;
-    gap: 1rem
+
+    gap: 1rem;
+
+    @media screen and (min-width: $mqMinWidth800) {
+        width: 80%;
+
+    }
 }
 
 // @supports not (display: grid) {
-.title {
-    width: auto;
+.poster__title {
+    width: 100%;
+
+    @media screen and (min-width: $mqMinWidth800) {
+        width: 60%;
+
+    }
+
+    &__h1 {
+        border-radius: 20px;
+        padding: 1rem 2rem;
+        font-weight: bold;
+    }
 }
 
-.resume {
+.poster__subtitle {
+    width: 80%;
+
+    @media screen and (min-width: $mqMinWidth800) {
+        width: 40%;
+
+    }
+
+    &__daily {
+        border-radius: 20px;
+        padding: 1rem 2rem;
+        font-weight: bold;
+    }
+}
+
+.poster__resume {
     @include box-border(3px solid $color_blue, 5px, $color_white, 1rem 2rem);
     color: $color_blue;
     width: 100%;
@@ -153,7 +185,7 @@ main {
 
 
 //passar a container
-.group-list {
+.poster__group-list {
     width: 60%;
 
     @media screen and (min-width: $mqMinWidth800) {
@@ -165,26 +197,41 @@ main {
     }
 }
 
-.div-more {
-    width: 100%;
+.poster__div-more {
+    width: 60%;
+
+    @media screen and (min-width: $mqMinWidth800) {
+        width: 40%;
+    }
+
+    @media screen and (min-width: $mqMinWidth992) {
+        width: 25%;
+    }
 
     & .btn {
         font-size: 2rem;
         width: 100%;
         font-weight: bold;
+        background-color: $color_orange;
+        color: $color_white;
+    }
 
-        @media screen and (min-width: $mqMinWidth800) {
-            width: 80%;
-        }
-
-        @media screen and (min-width: $mqMinWidth992) {
-            width: 60%;
-        }
+    & .btn:hover {
+        background-color: $color_blue;
     }
 }
 
 // .cutom-box-h1 {}
 
 // }
-
-// @supports (display: grid) {}
+/* 
+@supports (display: grid) {
+    .poster__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 2rem;
+        width: 100%;
+        height: auto;
+    }
+} */
