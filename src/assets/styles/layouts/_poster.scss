@@ -224,14 +224,15 @@
 // .cutom-box-h1 {}
 
 // }
-/* 
+
 @supports (display: grid) {
     .poster__content {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        gap: 2rem;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+        grid-template-rows: repeat(6, auto);
+        row-gap: 1rem;
         width: 100%;
-        height: auto;
     }
-} */
+}
