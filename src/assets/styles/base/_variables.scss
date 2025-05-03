@@ -12,7 +12,7 @@ $color_white: #ffffff;
 $color_green_dark: #3b6f6e;
 $color_grey: #616161;
 $color_blue: #0277bd;
-$color_violer: #5e35b1;
+$color_violet: #5e35b1;
 $color_orange: #ff7043;
 $bg_web: color-scale-lightness($color_green, 95%);
 
@@ -34,5 +34,6 @@ $theme-colors: (
   "primary": $color_green,
   "alert": $color_orange,
   "secondary": $color_blue,
+  "warning": $color_violet,
   // "body-font-weight": bold,
 );
