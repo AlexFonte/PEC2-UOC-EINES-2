@@ -26,7 +26,7 @@
 @layer display {
 
     .ponencias__list {
-        @include flex(column, center, center, center);
+        @include flex(column, center, stretch, center);
         gap: 2rem;
         flex-wrap: wrap;
 
