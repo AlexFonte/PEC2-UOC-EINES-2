@@ -1,0 +1,54 @@
+@layer base, display;
+
+@layer base {
+    .ponencias {
+        @include flex(column, center, center, center);
+        // background-color: $color_violet;
+        background-color: $color_green_light;
+        min-width: 2rem;
+        min-height: 2rem;
+
+    }
+
+}
+
+@layer display {
+
+    .ponencias__list {
+        @include flex(column, center, center, center);
+        gap: 2rem;
+        flex-direction: wrap;
+
+        @media screen and (min-width: $mqMinWidth800) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+
+    .ponencia__item {
+        width: 90%;
+
+        @media screen and (min-width: $mqMinWidth600) {
+            width: 70%;
+        }
+
+        @media screen and (min-width: $mqMinWidth800) {
+            width: 30%;
+        }
+
+        @media screen and (min-width: $mqMinWidth1000) {
+            width: 25%;
+        }
+    }
+
+}
+
+
+
+.ponencia__title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
