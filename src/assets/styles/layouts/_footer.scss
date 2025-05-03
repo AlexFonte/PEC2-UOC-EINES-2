@@ -9,7 +9,7 @@
     color: $color_white;
 
     &:hover {
-      color: $color_violet;
+      color: $color_orange;
     }
   }
 
@@ -38,6 +38,25 @@
     }
   }
 
+  &__2 {
+
+    @include flex(column, space-around, center, center);
+    width: 100%;
+    gap: 1rem;
+
+    @media screen and (min-width: $mqMinWidth992) {
+      flex-direction: row;
+      width: 90%;
+    }
+  }
+
+  &__menu {
+    @media screen and (min-width: $mqMinWidth1000) {
+      @include flex(row, space-around, center, center);
+      padding: 0;
+      gap: 2rem;
+    }
+  }
 
   // XARXES SOCIALS DEL FOOTER
   &__medias {
