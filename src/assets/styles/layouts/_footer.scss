@@ -40,7 +40,7 @@
 
   &__2 {
 
-    @include flex(column, space-around, center, center);
+    @include flex(column, space-between, center, center);
     width: 100%;
     gap: 1rem;
 
@@ -81,10 +81,5 @@
       grid-column: 1 / span 2;
       text-align: left;
     }
-
   }
-
-
-
-
 }
