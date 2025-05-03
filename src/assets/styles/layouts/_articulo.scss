@@ -1,3 +1,16 @@
 h1 {
     font-size: 3rem;
 }
+
+.article__img {
+    background-image: url(../images/prova.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+
+
+    @supports (background-image: url('image.webp')) {
+        background-image: url(../images/prova.webp);
+    }
+}
