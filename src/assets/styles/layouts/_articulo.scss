@@ -1,16 +1,37 @@
-h1 {
-    font-size: 3rem;
-}
+@layer layouts;
 
-.article__img {
-    background-image: url(../images/eco-circular.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50rem;
+@layer layouts {
+
+    .article__img {
+        background-image: url(../images/eco-circular.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 50rem;
 
 
-    @supports (background-image: url('image.webp')) {
-        background-image: url(../images/eco-circular.webp);
+        @supports (background-image: url('image.webp')) {
+            background-image: url(../images/eco-circular.webp);
+        }
+    }
+
+    .article__content__1 {
+        @include flex(column, space-between, center, center);
+        gap: 2rem;
+
+        @media screen and (min-width: $mqMinWidth800) {
+            flex-direction: row;
+
+        }
+    }
+
+    .article__content__2 {
+        @include flex(column, space-between, center, center);
+        gap: 2rem;
+
+        @media screen and (min-width: $mqMinWidth992) {
+            flex-direction: row;
+
+        }
     }
 }
