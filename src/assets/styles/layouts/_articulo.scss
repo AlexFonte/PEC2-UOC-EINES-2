@@ -33,10 +33,19 @@
         container-name: bgcolor;
     }
 
+
     @container bgcolor (max-width: 800px) {
         .article__title {
             width: 100%;
             box-shadow: 0 10px 5px $color_green_dark;
+            border-radius: 2rem;
+        }
+    }
+
+    @container bgcolor (min-width: 800px) {
+        .article__title:has(.base__title) {
+            width: 100%;
+            box-shadow: 0 10px 5px $color_orange;
             border-radius: 2rem;
         }
     }
