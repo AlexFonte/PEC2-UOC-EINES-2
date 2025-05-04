@@ -3,7 +3,7 @@ h1 {
 }
 
 .article__img {
-    background-image: url(../images/prova.jpg);
+    background-image: url(../images/eco-circular.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -11,6 +11,6 @@ h1 {
 
 
     @supports (background-image: url('image.webp')) {
-        background-image: url(../images/prova.webp);
+        background-image: url(../images/eco-circular.webp);
     }
 }
