@@ -30,8 +30,11 @@
         gap: 2rem;
 
         @media screen and (min-width: $mqMinWidth992) {
-            flex-direction: row;
+            flex-direction: row-reverse;
 
         }
     }
 }
+
+
+@layer components {}
