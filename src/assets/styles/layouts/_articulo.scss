@@ -14,11 +14,12 @@
         }
     }
 
-    :is(.article__content__1, .article__content__2) {
+
+    :is(.article__content-1, .article__content-2) {
         @include flex(column, space-between, center, center);
         gap: 2rem;
 
-        @media screen and (min-width: $mqMinWidth992) {
+        @media screen and (min-width: $mq-min-width-992) {
             flex-direction: row;
             align-items: stretch;
         }

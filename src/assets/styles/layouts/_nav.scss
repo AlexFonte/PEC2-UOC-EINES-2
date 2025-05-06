@@ -9,7 +9,7 @@
     margin: auto;
     padding: 2rem 0;
 
-    @media screen and (min-width: $mqMinWidth768) {
+    @media screen and (min-width: $mq-min-width-768) {
         flex-direction: row;
         justify-content: space-around;
 
@@ -18,7 +18,7 @@
     &__logo__img {
         width: 250px;
 
-        @media screen and (min-width: $mqMinWidth768) {
+        @media screen and (min-width: $mq-min-width-768) {
             width: 300px;
 
         }
@@ -27,7 +27,7 @@
     // .nav__menu {
     //     width: 100%;
 
-    //     @media screen and (min-width: $mqMinWidth768) {
+    //     @media screen and (min-width: $mq-min-width-768) {
     //         width: auto;
     //     }
     // }
@@ -42,7 +42,7 @@
         font-weight: bold;
         // width: 50%;
 
-        @media screen and (min-width: $mqMinWidth768) {
+        @media screen and (min-width: $mq-min-width-768) {
             flex-direction: row;
             justify-content: space-around;
             // width: auto;

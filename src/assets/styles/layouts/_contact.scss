@@ -21,7 +21,7 @@
 
     }
 
-    .form__footer__btn {
+    .form__footer-btn {
 
         @media screen and (min-width: 500px) {
             height: 10lvh;
@@ -33,7 +33,7 @@
     }
 
     @container form-contact (max-width: 600px) {
-        .form__footer__btn {
+        .form__footer-btn {
             width: 100%;
             /* El botón ocupará todo el ancho */
             display: block;
