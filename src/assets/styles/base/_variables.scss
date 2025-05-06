@@ -15,7 +15,7 @@ $color_blue: #0277bd;
 $color_violet: #5e35b1;
 $color_orange: #ff7043;
 $bg_web: color-scale-lightness($color_green, 95%);
-
+$accordion-button-active-bg: color(display-p3 0.89 0.2 0.97 / 0.61);
 //################ MEDIA QUERIES ################
 
 $mqMinWidth420: 420px;
