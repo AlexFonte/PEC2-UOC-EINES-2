@@ -2,12 +2,8 @@
 
     height: auto;
 
-    @media screen and (min-width: $mqMinWidth800) {
-        height: 100lvh;
-    }
-
-    @media screen and (min-width: $mqMinWidth992) {
-        height: 60lvh;
+    @media screen and (min-width: 992px) {
+        height: 100%;
     }
 
     .card :is(.form-label, .form-select, .form-control, .btn, .accordion-button) {
@@ -20,6 +16,20 @@
         /* Habilita el uso de consultas de contenedor */
         container-name: form-contact;
         /* Asigna un nombre al contenedor */
+        ;
+
+
+    }
+
+    .form__footer__btn {
+
+        @media screen and (min-width: 500px) {
+            height: 10lvh;
+        }
+
+        @media screen and (min-width: 600px) {
+            height: 5lvh;
+        }
     }
 
     @container form-contact (max-width: 600px) {
@@ -31,6 +41,8 @@
             text-align: center;
             /* Centra el texto dentro del botón */
         }
+
+
     }
 
 }
